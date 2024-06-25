@@ -2,7 +2,7 @@ function Contact() {
   return (
     <div className="bg-green-600 ">
       <div className="flex justify-between text-white text-center p-4 max-w-6xl mx-auto">
-        <p>&copy;D-Dev</p>
+        <p className="font-medium"></p>
         <div className="flex justify-center gap-4 mt-2">
           <a
             href="

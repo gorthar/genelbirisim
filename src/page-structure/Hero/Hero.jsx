@@ -20,8 +20,8 @@ const Hero = () => {
           Crafting Exceptional Softwares with Passion and Precision
         </h2>
         <a href={resume}>
-          <button className="mx-12 mb-12 bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition duration-300 ease-in-out">
-            Download Resume
+          <button className="mx-12 mb-12 bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition duration-300 ease-in-out font-semibold">
+            Download My Resume
           </button>
         </a>
       </div>
