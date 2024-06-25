@@ -2,7 +2,7 @@
 
 export default function PortfolioCard({ project }) {
   return (
-    <div className="project-item p-4 w-[380px] sm:w-[460px] h-[640px] sm:h-[580px] bg-green-200 bg-opacity-80 border-b-2 rounded-lg shadow-lg border-green-600 mt-10 py-2">
+    <div className="project-item p-4 w-[380px] sm:w-[460px] h-[660px] sm:h-[590px] bg-green-200 bg-opacity-80 border-b-2 rounded-lg shadow-lg border-green-600 mt-10 py-2">
       <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
         <h3 className="font-semibold mb-1 text-center text-xl">
           {project.title}
