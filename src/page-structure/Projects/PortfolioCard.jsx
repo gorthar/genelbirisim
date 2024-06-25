@@ -18,18 +18,22 @@ export default function PortfolioCard({ project }) {
           {project.technologies}
         </p>
       </a>
-      <p className="text-gray-600 mt-2">
-        <span className="font-bold">Demo Credentials:</span>{" "}
-        {project.demoCredentials}
-      </p>
-      <a
-        href={project.liveLink}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-600 hover:underline mr-2"
-      >
-        View Live
-      </a>
+      {project.demoCredentials && (
+        <p className="text-gray-600 mt-2">
+          <span className="font-bold">Demo Credentials:</span>{" "}
+          {project.demoCredentials}
+        </p>
+      )}
+      {project.liveLink && (
+        <a
+          href={project.liveLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline mr-2"
+        >
+          View Live
+        </a>
+      )}
       {project.githubLink && (
         <a
           href={project.githubLink}
