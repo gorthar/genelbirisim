@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Background from "../../assets/bg3.png";
+import resume from "../../assets/resume-DK.pdf";
 
 const Hero = () => {
   return (
@@ -18,6 +19,11 @@ const Hero = () => {
         <h2 className="mb-12 mt-3 mx-12 text-green-700 text-xl font-normal">
           Crafting Exceptional Softwares with Passion and Precision
         </h2>
+        <a href={resume}>
+          <button className="mx-12 mb-12 bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition duration-300 ease-in-out">
+            Download Resume
+          </button>
+        </a>
       </div>
       <span></span>
       <span></span>

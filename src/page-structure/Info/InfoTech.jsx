@@ -36,7 +36,7 @@ function InfoTech() {
   return (
     <div className="w-full flex justify-center items-center mt-12 flex-col">
       <p className="text-center text-4xl font-bold text-green-600">Skills</p>
-      <ul className="grid grid-cols-2 gap-8 mt-8 justify-items-center lg:grid-cols-4 lg:gap-16">
+      <ul className="grid grid-cols-2 sm:grid-cols-3 sm:gap-16 gap-8 mt-8 justify-items-center lg:grid-cols-4 lg:gap-16">
         {skills.map((skill, index) => (
           <li key={index}>
             <img

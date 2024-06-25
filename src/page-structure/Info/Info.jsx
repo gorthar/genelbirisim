@@ -6,9 +6,9 @@ function Info() {
   return (
     <div
       id="info"
-      className="flex flex-col justify-around sm:h-screen sm:flex-row"
+      className="flex flex-col justify-around sm:min-h-screen sm:flex-row"
     >
-      <div className="grid grid-cols-1  md:grid-cols-2 sm:grid-rows-1 gap-4">
+      <div className="grid grid-cols-1  md:grid-cols-2 md:grid-rows-1 gap-4">
         <div className="sm:row-span-3 flex justify-center">
           <InfroSelf />
         </div>
