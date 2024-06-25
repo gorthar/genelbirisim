@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 function MenuItem({ text, link }) {
   return (
     <li className="list-none mt-1">
