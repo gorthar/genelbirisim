@@ -9,7 +9,7 @@ const Portfolio = () => {
       id: 1,
       title: "Footwear - E-commerce Website",
       description:
-        "Under Development! An e commerce website for an imaginary shoe store. It is built with .Net Web API, MS Sql Server, Entity Framework, .Net identity , React with Typescript, and Tailwindcss. JWT prefered for authentication.",
+        "Under Development! An e commerce website for an imaginary shoe store. It is built with .Net Web API, MS Sql Server, Entity Framework, .Net identity , React with Typescript, and Tailwindcss. JWT prefered for authentication. More details about the features can be found on the GitHub page.",
       technologies:
         "Html, Css, Typescript, React, .Net Web API, MS Sql Server, Entity Framework, .Net identity, Tailwindcss",
       githubLink: "https://github.com/gorthar/Ecommerce",
@@ -19,7 +19,7 @@ const Portfolio = () => {
       id: 3,
       title: "Revently - Event Management App",
       description:
-        "Revently is an event management app that allows users to create, manage, and share events. It is built with React with TypeScript, Redux, Firebase, and Tailwindcss. It is a responsive web app.",
+        "Revently is an event management app that allows users to create, manage, and share events. Details about the features can be found on the GitHub page. It is built with React with TypeScript, Redux, Firebase, and Tailwindcss.",
       liveLink: "https://revently-myreven.web.app/",
       githubLink: "https://github.com/gorthar/respty",
       technologies:
@@ -31,7 +31,7 @@ const Portfolio = () => {
       id: 2,
       title: "Farmers Table - E-commerce Website",
       description:
-        "An e commerce website for an imaginary farmer to sell their products. It is built with React, Express, Mongodb and Tailwindcss. It is a responsive web app. Takes time to load. Please be patient.",
+        "An e commerce website for an imaginary farmer to sell their products. It is built with React, Express, Mongodb and Tailwindcss. It is a responsive web app. Takes time to load. Please be patient.\nDetails about the features can be found on the GitHub page.",
       technologies:
         "Html, Css, Javascript, React, Mongodb, Tailwindcss, Express, React Router",
       githubLink: "https://github.com/gorthar/farmersTableFrontend",
