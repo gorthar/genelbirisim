@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import Background from "../../assets/bg3.png";
+import Background from "../../assets/bg3.webp";
 
 import resume from "../../assets/resume-DK.pdf";
 
