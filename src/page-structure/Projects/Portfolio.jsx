@@ -9,7 +9,7 @@ const Portfolio = () => {
       id: 1,
       title: "Footwear - E-commerce Website",
       description:
-        "An e commerce website for an imaginary shoe store. It is built with .Net 8 Web API, MS Sql Server, Entity Framework, .Net identity , React with Typescript, and Tailwindcss. JWT prefered for authentication. More details about the features can be found on the GitHub page.",
+        "An e commerce website for an imaginary shoe store. It is built with .Net 8 Web API as back-end, React as front-end and deployed to Azure. More details about the features can be found on the GitHub page.",
       technologies:
         "Html, Css, Typescript, React, .Net Web API, MS Sql Server, Entity Framework, .Net identity, Azure, Tailwindcss",
       githubLink: "https://github.com/gorthar/Ecommerce",
