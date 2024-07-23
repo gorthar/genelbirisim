@@ -84,7 +84,11 @@ function Contact() {
           transition={{ duration: 0.5, delay: 1.6 }}
           className="flex flex-col items-center"
         >
-          <a href="mailto:dkahraman08@gmail.com">
+          <a
+            href="mailto:dkahraman08@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={gmail} alt="mail" className="w-32" />
           </a>
         </motion.div>

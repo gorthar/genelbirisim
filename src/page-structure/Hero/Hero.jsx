@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Background from "../../assets/bg3.png";
+
 import resume from "../../assets/resume-DK.pdf";
 
 const Hero = () => {

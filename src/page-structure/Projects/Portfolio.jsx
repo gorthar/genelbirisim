@@ -9,11 +9,13 @@ const Portfolio = () => {
       id: 1,
       title: "Footwear - E-commerce Website",
       description:
-        "Under Development! An e commerce website for an imaginary shoe store. It is built with .Net Web API, MS Sql Server, Entity Framework, .Net identity , React with Typescript, and Tailwindcss. JWT prefered for authentication. More details about the features can be found on the GitHub page.",
+        "An e commerce website for an imaginary shoe store. It is built with .Net 8 Web API, MS Sql Server, Entity Framework, .Net identity , React with Typescript, and Tailwindcss. JWT prefered for authentication. More details about the features can be found on the GitHub page.",
       technologies:
-        "Html, Css, Typescript, React, .Net Web API, MS Sql Server, Entity Framework, .Net identity, Tailwindcss",
+        "Html, Css, Typescript, React, .Net Web API, MS Sql Server, Entity Framework, .Net identity, Azure, Tailwindcss",
       githubLink: "https://github.com/gorthar/Ecommerce",
       Image: footwearImage,
+      demoCredentials: "Email:test@test.com , Password: Test123!",
+      liveLink: "https://ecomd.azurewebsites.net/",
     },
     {
       id: 3,
