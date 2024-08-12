@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import ReactGA from "react-ga4";
 
 export default function PortfolioCard({ project }) {
   return (
@@ -30,6 +31,13 @@ export default function PortfolioCard({ project }) {
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-600 hover:underline mr-2"
+          onClick={() => {
+            ReactGA.event({
+              category: "Live Site",
+              action: "Clicked on live site link",
+              label: project.title,
+            });
+          }}
         >
           View Live
         </a>
@@ -40,6 +48,13 @@ export default function PortfolioCard({ project }) {
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-600 hover:underline"
+          onClick={() => {
+            ReactGA.event({
+              category: "GitHub",
+              action: "Clicked on GitHub link",
+              label: project.title,
+            });
+          }}
         >
           GitHub
         </a>

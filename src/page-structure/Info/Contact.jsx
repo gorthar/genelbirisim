@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import gmail from "../../assets/logo/gmail.svg";
 import { motion, useAnimation, useInView } from "framer-motion";
+import ReactGA from "react-ga4";
 function Contact() {
   const contactRef = useRef(null);
   const isInViewContact = useInView(contactRef);
@@ -35,6 +36,13 @@ function Contact() {
       https://www.linkedin.com/in/dkahraman08/"
             target="_blank"
             rel="noreferrer"
+            onClick={() => {
+              ReactGA.event({
+                category: "LinkedIn",
+                action: "Clicked on LinkedIn link",
+                label: "LinkedIn",
+              });
+            }}
           >
             <img
               src="https://images.crunchbase.com/image/upload/c_pad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/rdp6fcqdcvqqcqn3jz72"
@@ -60,6 +68,13 @@ function Contact() {
             target="_blank"
             rel="noreferrer"
             className="flex justify-center  -mt-1"
+            onClick={() => {
+              ReactGA.event({
+                category: "GitHub",
+                action: "Clicked on GitHub profile link",
+                label: "GitHub",
+              });
+            }}
           >
             <svg
               height="110"
@@ -88,6 +103,13 @@ function Contact() {
             href="mailto:dkahraman08@gmail.com"
             target="_blank"
             rel="noreferrer"
+            onClick={() => {
+              ReactGA.event({
+                category: "Email",
+                action: "Clicked on email link",
+                label: "Email",
+              });
+            }}
           >
             <img src={gmail} alt="mail" className="w-32" />
           </a>
