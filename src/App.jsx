@@ -7,8 +7,8 @@ import Footer from "./page-structure/Footer/Footer";
 import ReactGA from "react-ga4";
 
 function App() {
-  ReactGA.initialize(import.meta.env.VITE_ANALYTICS_KEY);
-
+  //ReactGA.initialize(import.meta.env.VITE_ANALYTICS_KEY);
+  console.log(import.meta.env.VITE_ANALYTICS_KEY);
   return (
     <>
       <NavBar />
