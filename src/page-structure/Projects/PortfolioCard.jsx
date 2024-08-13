@@ -34,7 +34,7 @@ export default function PortfolioCard({ project }) {
           onClick={() => {
             ReactGA.event({
               category: "Live Site",
-              action: "Clicked on live site link",
+              action: "Clicked on live site link of " + project.title,
               label: project.title,
             });
           }}
@@ -51,7 +51,7 @@ export default function PortfolioCard({ project }) {
           onClick={() => {
             ReactGA.event({
               category: "GitHub",
-              action: "Clicked on GitHub link",
+              action: "Clicked on GitHub link of " + project.title,
               label: project.title,
             });
           }}
