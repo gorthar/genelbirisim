@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Background from "../../assets/bg3.webp";
-
+import ReactGA from "react-ga4";
 import resume from "../../assets/resume-DK.pdf";
 
 const Hero = () => {
@@ -21,7 +21,16 @@ const Hero = () => {
           Crafting Exceptional Softwares with Passion and Precision
         </h2>
         <a href={resume}>
-          <button className="mx-12 mb-12 bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition duration-300 ease-in-out font-semibold">
+          <button
+            className="mx-12 mb-12 bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition duration-300 ease-in-out font-semibold"
+            onClick={() => {
+              ReactGA.event({
+                category: "Resume",
+                action: "Downloaded Resume",
+                label: "Resume",
+              });
+            }}
+          >
             Download My Resume
           </button>
         </a>
