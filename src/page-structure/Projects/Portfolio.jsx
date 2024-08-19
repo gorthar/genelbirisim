@@ -2,14 +2,26 @@ import DemoSite from "./DemoSite";
 import revenly from "../../assets/revenly.png";
 import farmersTable from "../../assets/farmersTable.png";
 import footwearImage from "../../assets/footwear.png";
+import rentminder from "../../assets/rentminder.png";
 
 const Portfolio = () => {
   const projects = [
     {
+      id: 0,
+      title: "RentMinder - Property Management App",
+      description:
+        "RentMinder is a property management app that allows users to manage their properties, tenants, and rent payments. It is built with React with JavaScript, Redux, .net 8 WebAPI, and Tailwindcss. WARNING: Under development. More features will be added soon.",
+      technologies:
+        "Html, Css, JavaScript, React, .Net Web API, PosgreSQL, Entity Framework, Firebase Authentication, Tailwindcss",
+      githubLink: "https://github.com/gorthar/RentMinder_V2",
+      Image: rentminder,
+      liveLink: "https://rent-minder-v2-client.vercel.app/",
+    },
+    {
       id: 1,
       title: "Footwear - E-commerce Website",
       description:
-        "An e commerce website for an imaginary shoe store. It is built with .Net 8 Web API as back-end, React as front-end and deployed to Azure. More details about the features can be found on the GitHub page. WARNING: The website is hosted on a free tier of Azure, so it may take a few seconds to load. Please be patient.",
+        "Full stack e-commerce website for an imaginary shoe store. It is built with .Net 8 Web API as back-end, React as front-end and deployed to Azure. More details about the features can be found on the GitHub page. WARNING: The website is hosted on a free tier of Azure, so it may take around 30 seconds to load. Please be patient.",
       technologies:
         "Html, Css, Typescript, React, .Net Web API, MS Sql Server, Entity Framework, .Net identity, Azure, Tailwindcss",
       githubLink: "https://github.com/gorthar/Ecommerce",
