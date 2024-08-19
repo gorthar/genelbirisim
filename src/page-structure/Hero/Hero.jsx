@@ -2,8 +2,20 @@
 import Background from "../../assets/bg3.webp";
 import ReactGA from "react-ga4";
 import resume from "../../assets/resume-DK.pdf";
+import { useEffect } from "react";
 
 const Hero = () => {
+  useEffect(() => {
+    console.log("Fetching data from Azure server to waking it up");
+    async function fetchData() {
+      const response = await fetch(
+        "https://ecomd.azurewebsites.net/api/Products/1"
+      );
+      const data = await response.json();
+      data && console.log("Azure server woke up");
+    }
+    fetchData();
+  }, []);
   return (
     <div
       id="heo"
