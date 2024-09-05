@@ -6,14 +6,37 @@ import { useEffect } from "react";
 
 const Hero = () => {
   useEffect(() => {
-    console.log("Fetching data from Azure server to waking it up");
+    console.log("Fetching data from Azure server to wake it up");
+
     async function fetchData() {
-      const response = await fetch(
-        "https://ecomd.azurewebsites.net/api/Products/1"
-      );
-      const data = await response.json();
-      data && console.log("Azure server woke up");
+      try {
+        const response = await fetch(
+          "https://ecomd.azurewebsites.net/api/Products/1",
+          {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            credentials: "include",
+          }
+        );
+
+        if (!response.ok) {
+          // Log the error if the response is not ok (e.g., status code is not 2xx)
+          console.error(
+            `Error fetching data: ${response.status} ${response.statusText}`
+          );
+          return;
+        }
+
+        const data = await response.json();
+        console.log("Azure server woke up", data);
+      } catch (error) {
+        // Log any network or other errors that may occur
+        console.error("Failed to fetch data from Azure server:", error);
+      }
     }
+
     fetchData();
   }, []);
   return (
