@@ -57,6 +57,24 @@ const Hero = () => {
       <span></span>
       <span></span>
       <span id="middle"></span>
+
+      <a
+        href={resume}
+        className="md:hidden relative top-[85%] left-[calc(50%-100px)]"
+      >
+        <button
+          className=" bg-white text-green-600 px-4 py-2 shadow-xl rounded-md hover:bg-green-700 transition duration-300 ease-in-out font-semibold"
+          onClick={() => {
+            ReactGA.event({
+              category: "Resume",
+              action: "Downloaded Resume",
+              label: "Resume",
+            });
+          }}
+        >
+          Download My Resume
+        </button>
+      </a>
     </div>
   );
 };
