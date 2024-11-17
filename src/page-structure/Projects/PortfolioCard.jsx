@@ -3,7 +3,7 @@ import ReactGA from "react-ga4";
 
 export default function PortfolioCard({ project }) {
   return (
-    <div className="project-item p-2 sm:p-4 w-[340px] sm:w-[460px] h-[690px] sm:h-[750px] m-1 sm:m-0 bg-green-200 bg-opacity-80 border-b-2 rounded-lg shadow-lg border-green-600 mt-10 py-2">
+    <div className="project-item p-2 sm:p-4 w-[340px] sm:w-[460px] h-[720px] sm:h-[750px] m-1 sm:m-0 bg-green-200 bg-opacity-80 border-b-2 rounded-lg shadow-lg border-green-600 mt-10 py-2">
       <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
         <h3 className="font-semibold mb-1 text-center text-xl">
           {project.title}
