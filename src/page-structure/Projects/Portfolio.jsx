@@ -57,7 +57,7 @@ const Portfolio = () => {
     },
   ];
   return (
-    <div id="projects" className="w-full flex justify-center items-center">
+    <div id="projects" className="w-full flex justify-center items-center mb-8">
       <DemoSite projects={projects} />
     </div>
   );
