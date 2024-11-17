@@ -12,10 +12,13 @@ const Portfolio = () => {
       description:
         "RentMinder is a property management app that allows users to manage their properties, tenants, and rent payments. It is built with React with JavaScript, Redux, .net 8 WebAPI, and Tailwindcss. WARNING: Under development. More features will be added soon.",
       technologies:
-        "Html, Css, JavaScript, React, .Net Web API, PosgreSQL, Entity Framework, Firebase Authentication, Tailwindcss",
+        "Html, Css, JavaScript, React, .Net Web API, PosgreSQL, Entity Framework, Firebase Authentication, Tailwindcss, AWS Lambda",
       githubLink: "https://github.com/gorthar/RentMinder_V2",
       Image: rentminder,
-      liveLink: "https://rent-minder-v2-client.vercel.app/",
+      liveLink:
+        "https://naw6cequtcz2jxtyifzuhlbfxq0zutiw.lambda-url.us-west-2.on.aws",
+      demoCredentials:
+        "Tenant Email: test@test.com Landlord Email: test1@test.com, Password: test1234",
     },
     {
       id: 1,
