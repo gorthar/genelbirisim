@@ -22,15 +22,19 @@ const Hero = () => {
       style={{ backgroundImage: `url(${Background})` }}
       className=" bg-cover relative bg-center h-96 md:h-[calc(100vh-4rem)]"
     >
-      <div className=" bg-green-200 bg-opacity-80 w-3/12 min-w-[300px] absolute top-[37%] left-[8%] rounded-md hidden md:block">
-        <h4 className="mt-12 mx-12 text-green-700 font-bold text-xl">
-          Welcome to
-        </h4>
-        <h2 className="mx-12 text-green-700 font-bold text-4xl">
-          Dogukan's World
-        </h2>
+      <div className=" bg-green-200 bg-opacity-80 w-4/12 min-w-[350px] absolute top-[37%] left-[8%] rounded-md hidden md:block">
+        <h4 className="mt-12 mx-12 text-green-700 font-bold text-xl">Hey!</h4>
+        <div className="flex justify-start items-end">
+          <h2 className="ml-12 text-green-700 font-bold text-4xl">
+            I am Dogukan
+          </h2>
+          <h3 className="ml-2 text-green-700 font-light italic text-2xl ">
+            (Dowu'khan)
+          </h3>
+        </div>
+
         <h2 className="mb-12 mt-3 mx-12 text-green-700 text-xl font-normal">
-          Crafting Exceptional Softwares with Passion and Precision
+          Full Stack Software Developer specialized in .Net and React
         </h2>
         <a href={resume}>
           <button

@@ -11,9 +11,9 @@ function InfroSelf() {
           expertise and knowledge to my projects.
         </p>
         <p className="sm:m-6 m-3">
-          I hold a Bachelor&apos;s degree in Computer Systems Education and have
-          completed a Computer Engineering program. Recently, I have graduated
-          from Post Degree Diploma in Information and Communication Technology.
+          I hold 2 Bachelor&apos;s degree. One in Computer Engineering and one
+          in Computer Systems Education. Recently, I have graduated from Post
+          Degree Diploma in Information and Communication Technology.
         </p>
         <p className="sm:m-6 m-3">
           Throughout my career, I have worked with C#, Python, JavaScript, HTML,

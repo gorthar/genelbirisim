@@ -1,11 +1,17 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gmail from "../../assets/logo/gmail.svg";
-import { motion, useAnimation, useInView } from "framer-motion";
+import {
+  AnimatePresence,
+  motion,
+  useAnimation,
+  useInView,
+} from "framer-motion";
 import ReactGA from "react-ga4";
 function Contact() {
   const contactRef = useRef(null);
   const isInViewContact = useInView(contactRef);
   const contactControls = useAnimation();
+  const [hoverIndex, setHoverIndex] = useState(null);
 
   useEffect(() => {
     if (isInViewContact) {
@@ -15,11 +21,11 @@ function Contact() {
     }
   }, [isInViewContact]);
   return (
-    <div className="">
+    <div className="overflow-hidden">
       <h2 className="text-center text-4xl font-bold text-green-600 my-10">
         Contact
       </h2>
-      <div className="flex justify-center  items-center gap-4 sm:gap-16 mb-10">
+      <div className="flex justify-center  items-center mb-10">
         <motion.div
           ref={contactRef}
           variants={{
@@ -29,13 +35,16 @@ function Contact() {
           initial="hidden"
           animate={contactControls}
           transition={{ duration: 0.5, delay: 0.8 }}
-          className="flex flex-col items-center"
+          className="flex flex-col items-center relative w-36 h-36 justify-center"
+          onMouseEnter={() => setHoverIndex(0)}
+          onMouseLeave={() => setHoverIndex(null)}
         >
           <a
             href="
       https://www.linkedin.com/in/dkahraman08/"
             target="_blank"
             rel="noreferrer"
+            className="z-10"
             onClick={() => {
               ReactGA.event({
                 category: "LinkedIn",
@@ -50,6 +59,23 @@ function Contact() {
               className="w-32 rounded-xl"
             />
           </a>
+          <AnimatePresence>
+            {hoverIndex === 0 && (
+              <motion.span
+                className="absolute inset-0 bg-green-200 block  rounded-3xl"
+                layoutId="hoverBackground"
+                initial={{ opacity: 0 }}
+                animate={{
+                  opacity: 1,
+                  transition: { duration: 0.15 },
+                }}
+                exit={{
+                  opacity: 0,
+                  transition: { duration: 0.15, delay: 0.2 },
+                }}
+              />
+            )}
+          </AnimatePresence>
         </motion.div>
         <motion.div
           ref={contactRef}
@@ -60,14 +86,33 @@ function Contact() {
           initial="hidden"
           animate={contactControls}
           transition={{ duration: 0.5, delay: 1.2 }}
-          className="flex flex-col items-center"
+          className="flex flex-col items-center relative w-36 h-36 justify-center"
+          onMouseEnter={() => setHoverIndex(1)}
+          onMouseLeave={() => setHoverIndex(null)}
         >
+          <AnimatePresence>
+            {hoverIndex === 1 && (
+              <motion.span
+                className="absolute inset-0  bg-green-200 block  rounded-3xl"
+                layoutId="hoverBackground"
+                initial={{ opacity: 0 }}
+                animate={{
+                  opacity: 1,
+                  transition: { duration: 0.15 },
+                }}
+                exit={{
+                  opacity: 0,
+                  transition: { duration: 0.15, delay: 0.2 },
+                }}
+              />
+            )}
+          </AnimatePresence>
           <a
             href="
       https://github.com/gorthar"
             target="_blank"
             rel="noreferrer"
-            className="flex justify-center  -mt-1"
+            className="flex justify-center z-10 -mt-1"
             onClick={() => {
               ReactGA.event({
                 category: "GitHub",
@@ -97,12 +142,32 @@ function Contact() {
           initial="hidden"
           animate={contactControls}
           transition={{ duration: 0.5, delay: 1.6 }}
-          className="flex flex-col items-center"
+          className="flex flex-col items-center relative w-36 h-36 justify-center"
+          onMouseEnter={() => setHoverIndex(2)}
+          onMouseLeave={() => setHoverIndex(null)}
         >
+          <AnimatePresence>
+            {hoverIndex === 2 && (
+              <motion.span
+                className="absolute inset-0  bg-green-200 block  rounded-3xl"
+                layoutId="hoverBackground"
+                initial={{ opacity: 0 }}
+                animate={{
+                  opacity: 1,
+                  transition: { duration: 0.15 },
+                }}
+                exit={{
+                  opacity: 0,
+                  transition: { duration: 0.15, delay: 0.2 },
+                }}
+              />
+            )}
+          </AnimatePresence>
           <a
             href="mailto:dkahraman08@gmail.com"
             target="_blank"
             rel="noreferrer"
+            className="z-10"
             onClick={() => {
               ReactGA.event({
                 category: "Email",
