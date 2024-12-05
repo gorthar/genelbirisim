@@ -34,7 +34,8 @@ const Hero = () => {
         </div>
 
         <h2 className="mb-12 mt-3 mx-12 text-green-700 text-xl font-normal">
-          Full Stack Software Developer specialized in .Net and React
+          Full Stack Software Developer specialized in .Net, Java, Python and
+          React.
         </h2>
         <a href={resume}>
           <button
@@ -79,6 +80,7 @@ const Hero = () => {
           Download My Resume
         </button>
       </a>
+      <div className="blob"></div>
     </div>
   );
 };
