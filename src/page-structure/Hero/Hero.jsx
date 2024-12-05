@@ -80,7 +80,7 @@ const Hero = () => {
           Download My Resume
         </button>
       </a>
-      <div className="blob"></div>
+      <div className="blob hidden md:block"></div>
     </div>
   );
 };
