@@ -104,7 +104,9 @@ function InfoTech() {
                   id={skill.id}
                   src={skill.img}
                   alt={skill.name}
-                  className="w-16 h-16 sm:w-20 sm:h-20 object-contain relative hover:-translate-y-2 transform transition duration-300 ease-in-out"
+                  className={`w-16 h-16 sm:w-20 sm:h-20 object-contain relative ${
+                    hoverIndex === index ? "-translate-y-2" : ""
+                  } transform transition duration-300 ease-in-out`}
                 />
 
                 <AnimatePresence>
