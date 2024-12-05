@@ -5,7 +5,6 @@ import {
   useInView,
   AnimatePresence,
 } from "framer-motion";
-import "react-tooltip/dist/react-tooltip.css";
 
 import cs from "../../assets/logo/c.svg";
 import css from "../../assets/logo/css.svg";
