@@ -25,7 +25,7 @@ function InfoTech() {
   const ref = useRef(null);
   const isInView = useInView(ref);
   const mainControls = useAnimation();
-  const [hoverIndex, setHoverIndex] = useState(null);
+  const [hoverIndex, setHoverIndex] = useState(0);
 
   useEffect(() => {
     if (isInView) {
