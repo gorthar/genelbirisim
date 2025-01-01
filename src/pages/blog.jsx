@@ -12,7 +12,7 @@ function BlogPage() {
       {
         slug: "hello-world",
         title: "Hello World",
-        date: "2024-03-20",
+        date: "2024-12-31",
         description: "My first blog post",
       },
       // Add more posts here as you create them
