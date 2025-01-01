@@ -47,23 +47,26 @@ I'll be covering a wide range of topics including:
 Here's a simple example of a React component using modern practices:
 
 ```jsx
-import { useState, useEffect } from 'react';
-function WelcomeMessage({ username }) {
-const [greeting, setGreeting] = useState('');
-useEffect(() => {
-const timeOfDay = new Date().getHours();
-const message = timeOfDay < 12 ? 'Good morning' :
-timeOfDay < 18 ? 'Good afternoon' :
-'Good evening';
-setGreeting(${message}, ${username}!);
-}, [username]);
-return (
+import { useState, useEffect } from "react";
 
-<div className="welcome-message">
-<h2>{greeting}</h2>
-<p>Welcome to my tech blog!</p>
-</div>
-);
+function WelcomeMessage({ username }) {
+  const [greeting, setGreeting] = useState("");
+  useEffect(() => {
+    const timeOfDay = new Date().getHours();
+    const message =
+      timeOfDay < 12
+        ? "Good morning"
+        : timeOfDay < 18
+        ? "Good afternoon"
+        : "Good evening";
+    setGreeting(`${message}, ${username}!`);
+  }, [username]);
+  return (
+    <div className="welcome-message">
+      <h2>{greeting}</h2>
+      <p>Welcome to my tech blog!</p>
+    </div>
+  );
 }
 export default WelcomeMessage;
 ```
