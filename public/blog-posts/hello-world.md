@@ -1,6 +1,6 @@
 # Hello World! 👋
 
-_Published on March 20, 2024 by Dogukan_
+_Published on December 29, 2024 by Dogukan_
 
 Welcome to my blog! I'm a Full Stack Developer passionate about creating efficient, scalable solutions and sharing knowledge with the developer community. This blog will be my platform to share insights, experiences, and technical knowledge.
 
