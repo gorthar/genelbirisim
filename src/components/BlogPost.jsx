@@ -35,8 +35,16 @@ function BlogPost() {
 
   if (loading) {
     return (
-      <div className="min-h-[calc(100vh-8rem)] bg-gradient-to-b from-white to-green-50 pt-16 md:pt-24 pb-16">
-        <div className="max-w-4xl mx-auto px-4">
+      <div className="min-h-[calc(100vh-8rem)] bg-gradient-to-b from-white to-green-50 relative overflow-hidden">
+        {/* Background Animations */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute -left-20 top-20 w-64 h-64 bg-green-200 rounded-full mix-blend-multiply blur-2xl animate-float opacity-80" />
+          <div className="absolute -right-20 top-40 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply blur-2xl animate-float-delayed opacity-80" />
+          <div className="absolute left-1/3 top-96 w-56 h-56 bg-yellow-200 rounded-full mix-blend-multiply blur-2xl animate-float-slow opacity-80" />
+          <div className="absolute right-1/3 bottom-32 w-60 h-60 bg-emerald-200 rounded-full mix-blend-multiply blur-2xl animate-float-delayed opacity-80" />
+        </div>
+
+        <div className="max-w-4xl mx-auto px-4 pt-16 md:pt-24 pb-16 relative z-10">
           <Link
             to="/blog"
             className="inline-flex items-center text-green-600 hover:text-green-700 font-medium mb-8"
@@ -66,8 +74,16 @@ function BlogPost() {
 
   if (error) {
     return (
-      <div className="min-h-[calc(100vh-8rem)] bg-gradient-to-b from-white to-green-50 pt-16 md:pt-24 pb-16">
-        <div className="max-w-4xl mx-auto px-4">
+      <div className="min-h-[calc(100vh-8rem)] bg-gradient-to-b from-white to-green-50 relative overflow-hidden">
+        {/* Background Animations */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute -left-20 top-20 w-64 h-64 bg-green-200 rounded-full mix-blend-multiply blur-2xl animate-float opacity-80" />
+          <div className="absolute -right-20 top-40 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply blur-2xl animate-float-delayed opacity-80" />
+          <div className="absolute left-1/3 top-96 w-56 h-56 bg-yellow-200 rounded-full mix-blend-multiply blur-2xl animate-float-slow opacity-80" />
+          <div className="absolute right-1/3 bottom-32 w-60 h-60 bg-emerald-200 rounded-full mix-blend-multiply blur-2xl animate-float-delayed opacity-80" />
+        </div>
+
+        <div className="max-w-4xl mx-auto px-4 pt-16 md:pt-24 pb-16 relative z-10">
           <Link
             to="/blog"
             className="inline-flex items-center text-green-600 hover:text-green-700 font-medium mb-8"
@@ -96,8 +112,16 @@ function BlogPost() {
   }
 
   return (
-    <div className="min-h-[calc(100vh-8rem)] bg-gradient-to-b from-white to-green-50 pt-16 md:pt-24 pb-16">
-      <div className="max-w-4xl mx-auto px-4">
+    <div className="min-h-[calc(100vh-8rem)] bg-gradient-to-b from-white to-green-50 relative overflow-hidden">
+      {/* Background Animations */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute -left-20 top-20 w-64 h-64 bg-green-200 rounded-full mix-blend-multiply blur-2xl animate-float opacity-80" />
+        <div className="absolute -right-20 top-40 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply blur-2xl animate-float-delayed opacity-80" />
+        <div className="absolute left-1/3 top-96 w-56 h-56 bg-yellow-200 rounded-full mix-blend-multiply blur-2xl animate-float-slow opacity-80" />
+        <div className="absolute right-1/3 bottom-32 w-60 h-60 bg-emerald-200 rounded-full mix-blend-multiply blur-2xl animate-float-delayed opacity-80" />
+      </div>
+
+      <div className="max-w-4xl mx-auto px-4 pt-16 md:pt-24 pb-16 relative z-10">
         <Link
           to="/blog"
           className="inline-flex items-center text-green-600 hover:text-green-700 font-medium mb-8"
