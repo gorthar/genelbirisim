@@ -26,7 +26,7 @@ const Hero = () => {
         <h4 className="mt-12 mx-12 text-green-700 font-bold text-xl">Hey!</h4>
         <div className="flex justify-start items-end">
           <h2 className="ml-12 text-green-700 font-bold text-4xl">
-            I am Dogukan
+            I am Jimmy Dogukan
           </h2>
           <h3 className="ml-2 text-green-700 font-light italic text-2xl ">
             (Dowu'khan)
