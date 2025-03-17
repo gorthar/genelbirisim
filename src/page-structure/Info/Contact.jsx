@@ -41,7 +41,7 @@ function Contact() {
         >
           <a
             href="
-      https://www.linkedin.com/in/dkahraman08/"
+      https://www.linkedin.com/in/jdkahraman/"
             target="_blank"
             rel="noreferrer"
             className="z-10"
